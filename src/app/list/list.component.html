@@ -1,0 +1,24 @@
+<div class="d-flex">
+    <h1  style="margin-top:5% ; color: rgb(255, 115, 0); font-weight: bolder; font-size: 55px; font-family:'Courier New', Courier, monospace; ">S&H PLATFORM</h1>
+<form (ngSubmit)="searchfn()" style="width: 400px;height: 36px; margin-top: 5%;margin-left: 18%;" class="d-flex">
+    <input name="serach" [(ngModel)]="search.key"  style="max-width: 100%;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-light" type="submit">Search</button>
+  </form>
+</div>
+<br>
+<li style="margin-top: 5%;" *ngFor="let i of games">
+    <div class="card mb-3" style="width: 500px; margin-left: 23%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../../assets/images/game.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{i.title}}</h5>
+              <p class="card-text">{{i.body}}</p>
+              <p class="card-text"><small class="text-muted">{{i.userId}}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</li>

@@ -1,0 +1,39 @@
+<div class="d-flex">
+    <h1  style="margin-top:5% ; color: rgb(255, 115, 0); font-weight: bolder; font-size: 55px; font-family:'Courier New', Courier, monospace; ">S&H PLATFORM</h1>
+<form (ngSubmit)="searchfn()" style="width: 400px;height: 36px; margin-top: 5%;margin-left: 18%;" class="d-flex">
+    <input name="serach" [(ngModel)]="search.key" style="max-width: 100%;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-light" type="submit">Search</button>
+  </form>
+</div>
+<br>
+<br>
+<div class="d-flex my-1" style=" width: 82%;margin-right: 5%;" >
+    <div  class="card mx-5" style="width: 18rem;margin-top: 10%;">
+        <img src="../../assets/images/game.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{games[0].title}}</h5>
+         
+          <a href="#" class="btn btn-primary">Show</a>
+        </div>
+      </div>
+      <div  class="card mx-5" style="width: 18rem;margin-top: 10%;">
+        <img src="../../assets/images/game.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{games[1].title}}</h5>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <a href="#" class="btn btn-primary">Show</a>
+        </div>
+      </div>
+      <div  class="card mx-5" style="width: 18rem;margin-top: 10%;">
+        <img src="../../assets/images/game.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{games[2].title}}</h5>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <a href="#" class="btn btn-primary">Show</a>
+        </div>
+      </div>
+</div><br>
+<div style="width: 82%; text-align: center; background-color: rgba(0, 0, 0, 0.582);height: 200px;">
+    <h2 style="text-align: center; font-size: 60px; color: white;">Know More About Games</h2>
+     <button (click)="navigate()" class="btn btn-warning">Show More</button>
+</div>
